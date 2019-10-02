@@ -14,6 +14,14 @@ module.exports = {
         name: "pages",
       },
     },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          
+        ], // just in case those previously mentioned remark plugins sound cool :)
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
