@@ -4,11 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
-
 
 // Creating Static Pages
-const path = require('path')
+const path = require("path")
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
@@ -17,7 +15,7 @@ exports.createPages = async ({ actions, graphql }) => {
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000  
+        limit: 1000
       ) {
         edges {
           node {
@@ -38,7 +36,7 @@ exports.createPages = async ({ actions, graphql }) => {
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
-      contest: {}, // additional data can be passed via context
+      context: {}, // additional data can be passed via context
     })
   })
 }
