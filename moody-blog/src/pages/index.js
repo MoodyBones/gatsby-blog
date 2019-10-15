@@ -1,8 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
-
-// import '../css/index.css'; // add some style if you want!
+import '../styles/global.css'; // add some style if you want!
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark
