@@ -10,7 +10,6 @@ module.exports = {
       twitter: 'https://twitter.com/greglobinski',
       mailto: 'mailto:greglobinski@gmail.com',
     },
-  },
-  module.exports = {
+  },  
   __experimentalThemes: ['gatsby-theme-elevator-pitch']
 };
